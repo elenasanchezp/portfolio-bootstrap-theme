@@ -1,213 +1,217 @@
 
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>My Portfolio - Bootstrap Theme</title>
 </head>
 
 <body>
-    <div class="bg-info">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase">
+      <div class="container-fluid">
+          <a class="navbar-brand js-scroll-trigger" href="#">My Portfolio</a>
+          
+          <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fa fa-bars"></i>
+          </button>
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-default sticky-top navbar-light">
-          <div class="container-fluid">
-              <div class="navbar-header">
-                <a class="navbar-brand" href="#">My Portfolio</a>
-              </div>
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#testimonials">Testimonials</a></li>
+          <div class="collapse navbar-collapse">   
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item mx-0 mx-lg-1 active"><a class="nav-link py-3 px-0 px-lg-3" href="#">Home</a></li>
+              <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3" href="#about">About</a></li>
+              <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3" href="#portfolio">Portfolio</a></li>
+              <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3" href="#contact">Contact</a></li>
+              <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3" href="#testimonials">Testimonials</a></li>
             </ul>
-            
           </div>
-        </nav>
+      </div>
+    </nav>
+  
+    <!-- Header section -->
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container">
+        <h1 class="text-uppercase mb-0">My Portfolio</h1>
+        <hr class="star-light">
+        <h2 class="font-weight-light mb-0">Bootstrap Theme</h2>
+      </div>
+    </header>
+    <!-- Header section Ends -->
 
-    </div>
+    <!-- About section -->
+    <section id="about" class="about">
+      <div class="container">
 
-    <!-- Carousel -->
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Heading -->
+          <h2 class="text-center text-uppercase text-secondary mb-0">About</h2>
+          <hr class="icon-dark icon-file mb-5">
 
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
-        </ol>
-
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img data-src="holder.js/auto/#777:#555/text:First slide" alt="First slide [1140x500]" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTE0MCIgaGVpZ2h0PSI1MDAiIHZpZXdCb3g9IjAgMCAxMTQwIDUwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvMTE0MHg1MDAvYXV0by8jNzc3OiM1NTUvdGV4dDpGaXJzdCBzbGlkZQpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE2MDcwNDY4MTI0IHRleHQgeyBmaWxsOiM1NTU7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6NTdwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTYwNzA0NjgxMjQiPjxyZWN0IHdpZHRoPSIxMTQwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyIvPjxnPjx0ZXh0IHg9IjM5MC41MDc4MTI1IiB5PSIyNzUuNSI+Rmlyc3Qgc2xpZGU8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
-          </div>
-          <div class="item">
-            <img data-src="holder.js/auto/#666:#444/text:Second slide" alt="Second slide [1140x500]" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTE0MCIgaGVpZ2h0PSI1MDAiIHZpZXdCb3g9IjAgMCAxMTQwIDUwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvMTE0MHg1MDAvYXV0by8jNjY2OiM0NDQvdGV4dDpTZWNvbmQgc2xpZGUKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNjA3MDQ2OTg0ZSB0ZXh0IHsgZmlsbDojNDQ0O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjU3cHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE2MDcwNDY5ODRlIj48cmVjdCB3aWR0aD0iMTE0MCIgaGVpZ2h0PSI1MDAiIGZpbGw9IiM2NjYiLz48Zz48dGV4dCB4PSIzMzUuNjAxNTYyNSIgeT0iMjc1LjUiPlNlY29uZCBzbGlkZTwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
-          </div>
-          <div class="item">
-            <img data-src="holder.js/auto/#555:#333/text:Third slide" alt="Third slide [1140x500]" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTE0MCIgaGVpZ2h0PSI1MDAiIHZpZXdCb3g9IjAgMCAxMTQwIDUwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvMTE0MHg1MDAvYXV0by8jNTU1OiMzMzMvdGV4dDpUaGlyZCBzbGlkZQpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE2MDcwNDY1YzQwIHRleHQgeyBmaWxsOiMzMzM7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6NTdwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTYwNzA0NjVjNDAiPjxyZWN0IHdpZHRoPSIxMTQwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzU1NSIvPjxnPjx0ZXh0IHg9IjM3Ny44NjcxODc1IiB5PSIyNzUuNSI+VGhpcmQgc2xpZGU8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
-          </div>
-        </div>
-        
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-
-    </div>
-    <!-- Carousel Ends -->
-
-    <div class="container">
-      
-      <!-- About section -->
-      <section id="about" class="about">
-        
-        <!-- Heading -->
-        <h1 class="text-center">About</h1>
-        
-        <!-- Paragraphs -->
-        <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p> 
-        </div>
-
-        <!-- Row of columns -->
-        <div>
-          <div class="row">
-            <div class="col-md-4">
-              <h3>Heading</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-primary" href="#" role="button">View details »</a></p>
-            </div>
-
-            <div class="col-md-4">
-              <h3>Heading</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-primary" href="#" role="button">View details »</a></p>
-            </div>
-
-            <div class="col-md-4">
-              <h3>Heading</h3>
-              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-              <p><a class="btn btn-primary" href="#" role="button">View details »</a></p>
-            </div>
-        </div>
-        
-        <br><br>
-
-        <!-- Heading -->
-        <h4 class="text-center">Skills</h4>
-      
-        <!-- Tags -->
-        <div class="skills text-center">
-          <span class="badge badge-primary">Primary</span>
-          <span class="badge badge-secondary">Secondary</span>
-          <span class="badge badge-success">Success</span>
-          <span class="badge badge-danger">Danger</span>
-          <span class="badge badge-warning">Warning</span>
-          <span class="badge badge-info">Info</span>
-          <span class="badge badge-light">Light</span>
-          <span class="badge badge-dark">Dark</span>
-        </div>
-      
-        <br><br><br><br>
-      </sections>
-      <!-- About section Ends -->
-
-      <!-- Portfolio section -->
-      <section id="portfolio" class="portfolio">
-
-        <!-- Heading -->
-        <h1 class="text-center">Portfolio</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      
-        <!-- List -->
-        <dl>
-          <dt>Lorem ipsum dolor sit amet</dt>
-          <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
-          <dt>Lorem ipsum dolor sit amet</dt>
-          <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
-        </dl>
-        
-        <!-- Row of columns -->
-        <div class="row">
-          <div class="col-sm-6">
-            <img class="img-thumbnail" alt="Lorem ipsum dolor sit amet" src="https://ichef.bbci.co.uk/news/660/cpsprodpb/37B5/production/_89716241_thinkstockphotos-523060154.jpg" />
-          </div>
-          
-          <div class="col-sm-6">
-            <img class="img-thumbnail" alt="Lorem ipsum dolor sit amet" src="https://ichef.bbci.co.uk/news/660/cpsprodpb/37B5/production/_89716241_thinkstockphotos-523060154.jpg" />
-          </div>
-        </div>
-        
-        <br><br><br><br>
-      </section>
-      <!-- Portfolio section Ends -->
-
-      <!-- Contact section -->
-      <section id="contact" class="contact">
-
-        <!-- Heading -->
-        <h1 class="text-center">Contact Us</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        
-        <!-- Row of columns -->
-        <div class="row">
-          <div class="col-sm-6">
-            <!-- Form -->
-            <form class="form">
-                <fieldset>
-                  <legend>Contact Us</legend>
-                <p>
-                  <input type="text" class="form-control form-control-lg" id="input" placeholder="Name" required>
-                </p>
-                <p>
-                  <input type="text" class="form-control form-control-lg" id="input" placeholder="Email Address" required>
-                </p>
-                  <p>
-                  <input type="text" class="form-control form-control-lg" id="input" placeholder="Phone Number">
-                </p>
-                <p>
-                  <textarea id="textarea" class="form-control form-control-lg"  rows="3" required></textarea>
-                </p>
-                  <p>
-                    <button type="button" class="btn btn-primary btn-lg">Send</button>
-                  </p>
-                </fieldset>
-            </form>
+          <!-- Paragraphs -->
+          <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p> 
           </div>
 
-          <div class="col-sm-6">          
-              <p>Lorem ipsum dolor sit amet, <mark>consectetur adipiscing elit</mark>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p><em>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</em></p>
-          
-              <!-- Toggle to collapse/expand -->
-              <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                </div>
+          <!-- Row of columns -->
+          <div>
+            <div class="row">
+              <div class="col-md-4">
+                <h3>Heading</h3>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-primary" href="#" role="button">View details »</a></p>
               </div>
-              <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> Read more </a>
+
+              <div class="col-md-4">
+                <h3>Heading</h3>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-primary" href="#" role="button">View details »</a></p>
+              </div>
+
+              <div class="col-md-4">
+                <h3>Heading</h3>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p><a class="btn btn-primary" href="#" role="button">View details »</a></p>
+              </div>
           </div>
+          
+          <!-- Heading -->
+          <h4 class="text-center">Skills</h4>
+        
+          <!-- Tags -->
+          <div class="skills text-center">
+            <span class="badge badge-primary">Primary</span>
+            <span class="badge badge-secondary">Secondary</span>
+            <span class="badge badge-success">Success</span>
+            <span class="badge badge-danger">Danger</span>
+            <span class="badge badge-warning">Warning</span>
+            <span class="badge badge-info">Info</span>
+            <span class="badge badge-light">Light</span>
+            <span class="badge badge-dark">Dark</span>
+          </div>
+
+      </div>
+    </section>
+    <!-- About section Ends -->
+
+    <!-- Portfolio section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+
+          <!-- Heading -->
+          <h1 class="text-uppercase text-center">Portfolio</h1>
+          <hr class="icon-dark icon-grid mb-5">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        
+          <!-- List -->
+          <dl>
+            <dt>Lorem ipsum dolor sit amet</dt>
+            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+            <dt>Lorem ipsum dolor sit amet</dt>
+            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+          </dl>
+          
+          <!-- Row of columns -->
+          <div class="row">
+            <div class="col-sm-4">
+              <img class="img-thumbnail" alt="Lorem ipsum dolor sit amet" src="https://ichef.bbci.co.uk/news/660/cpsprodpb/37B5/production/_89716241_thinkstockphotos-523060154.jpg" />
+            </div>
+            
+            <div class="col-sm-4">
+              <img class="img-thumbnail" alt="Lorem ipsum dolor sit amet" src="https://ichef.bbci.co.uk/news/660/cpsprodpb/37B5/production/_89716241_thinkstockphotos-523060154.jpg" />
+            </div>
+
+            <div class="col-sm-4">
+                <img class="img-thumbnail" alt="Lorem ipsum dolor sit amet" src="https://ichef.bbci.co.uk/news/660/cpsprodpb/37B5/production/_89716241_thinkstockphotos-523060154.jpg" />
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <img class="img-thumbnail" alt="Lorem ipsum dolor sit amet" src="https://ichef.bbci.co.uk/news/660/cpsprodpb/37B5/production/_89716241_thinkstockphotos-523060154.jpg" />
+            </div>
+            
+            <div class="col-sm-4">
+              <img class="img-thumbnail" alt="Lorem ipsum dolor sit amet" src="https://ichef.bbci.co.uk/news/660/cpsprodpb/37B5/production/_89716241_thinkstockphotos-523060154.jpg" />
+            </div>
+
+            <div class="col-sm-4">
+                <img class="img-thumbnail" alt="Lorem ipsum dolor sit amet" src="https://ichef.bbci.co.uk/news/660/cpsprodpb/37B5/production/_89716241_thinkstockphotos-523060154.jpg" />
+              </div>
+          </div>
+
         </div>
+    </section>
+    <!-- Portfolio section Ends -->
 
-        <br><br><br><br>
-      </section>
-      <!-- Contact section Ends -->
+    <!-- Contact section -->
+    <section id="contact" class="contact">
+        <div class="container">
 
-      <!-- Testimonials section -->
-      <section id="testimonials" class="testimonials">
-          <h1 class="text-center">Testimonials</h1>
-          <blockquote class="blockquote">
-              <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-          </blockquote>
+          <!-- Heading -->
+          <h1 class="text-uppercase text-center">Contact Us</h1>
+          <hr class="icon-dark icon-envelope mb-5">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          
+          <!-- Row of columns -->
+          <div class="row">
+            <div class="col-sm-6">
+              <!-- Form -->
+              <form class="form">
+                  <fieldset>
+                    <legend>Contact Us</legend>
+                  <p>
+                    <input type="text" class="form-control form-control-lg" id="input" placeholder="Name" required>
+                  </p>
+                  <p>
+                    <input type="text" class="form-control form-control-lg" id="input" placeholder="Email Address" required>
+                  </p>
+                    <p>
+                    <input type="text" class="form-control form-control-lg" id="input" placeholder="Phone Number">
+                  </p>
+                  <p>
+                    <textarea id="textarea" class="form-control form-control-lg"  rows="3" required></textarea>
+                  </p>
+                    <p>
+                      <button type="button" class="btn btn-primary btn-lg">Send</button>
+                    </p>
+                  </fieldset>
+              </form>
+            </div>
+
+            <div class="col-sm-6">          
+                <p>Lorem ipsum dolor sit amet, <mark>consectetur adipiscing elit</mark>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p><em>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</em></p>
+            
+                <!-- Toggle to collapse/expand -->
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                  </div>
+                </div>
+                <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> Read more </a>
+            </div>
+          </div>
+
+        </div>
+    </section>
+    <!-- Contact section Ends -->
+
+    <!-- Testimonials section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+
+          <h1 class="text-uppercase text-center">Testimonials</h1>
+          <hr class="icon-dark icon-comment mb-5">
 
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
@@ -240,12 +244,13 @@
               </a>
           </div>
 
-          <br><br><br><br>
-      </section>
-      <!-- Testimonials section Ends -->
+        </div>
+    </section>
+    <!-- Testimonials section Ends -->
 
-      <!-- Footer section -->
-      <section class="footer">
+    <!-- Footer section -->
+    <section class="footer">
+      <div class="container">
 
         <div class="row">
 
@@ -262,30 +267,31 @@
             <div class="col-md-6 text-center">
               <p>Social</p>
               <ul class="list-unstyled list-inline">
-                  <li><a class="button social" href="#"><i class="fa fa-fw fa-linkedin fa-2x"></i></a></li>
-                  <li><a class="button social" href="#"><i class="fa fa-fw fa-github fa-2x"></i></a></li>
-                  <li><a class="button social" href="#"><i class="fa fa-fw fa-twitter fa-2x"></i></a></li>
-                  <li><a class="button social" href="#" title="My Flickr"><i class="fa fa-fw fa-flickr fa-2x"></i></a></li>
+                  <li class="list-inline-item"><a class="button social" href="#"><i class="fa fa-fw fa-linkedin fa-2x"></i></a></li>
+                  <li class="list-inline-item"><a class="button social" href="#"><i class="fa fa-fw fa-github fa-2x"></i></a></li>
+                  <li class="list-inline-item"><a class="button social" href="#"><i class="fa fa-fw fa-twitter fa-2x"></i></a></li>
+                  <li class="list-inline-item"><a class="button social" href="#" title="My Flickr"><i class="fa fa-fw fa-flickr fa-2x"></i></a></li>
               </ul>
             </div>
 
         </div>
 
-        <br><br><br><br>
-      </section>
-      <!-- Footer section Ends -->
+      </div>
+    </section>
+    <!-- Footer section Ends -->
 
-      <!-- Copyright section -->
-      <section class="copyright bg-info text-center">
-        <p>© 2017. All Rights Reversed</p>
-      </section>
-      <!-- Copyright section Ends -->
+    <!-- Copyright section -->
+    <section class="copyright bg-primary text-center">
+      <p>© 2018. All Rights Reversed</p>
+    </section>
+    <!-- Copyright section Ends -->
 
-    </div>
 </body>
 
 <script type="text/javascript"> 
+    
     $('.carousel').carousel({
-    interval: 2000
-    }); 
+      interval: 2000
+    });
+
 </script>
